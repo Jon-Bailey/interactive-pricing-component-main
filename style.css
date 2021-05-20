@@ -11,6 +11,7 @@ body {
   color: hsl(225, 20%, 60%);
   background-image: url(images/bg-pattern.svg);
   background-repeat: no-repeat;
+  padding: 20px;
 }
 
 h1 {
@@ -38,7 +39,8 @@ header {
   background-image: url(images/pattern-circles.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 35%;
+  background-position: absolute;
+  background-size: 180px;
 }
 
 header h1 {
@@ -54,9 +56,10 @@ header h3 {
 main {
   background-color: white;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.09);
-  margin: 20px;
+  margin: 20px auto;
   border-radius: 12px;
   padding: 40px 0px;
+  max-width: 700px;
 }
 
 section {
@@ -88,6 +91,7 @@ section {
   display: flex;
   gap: 5px;
   justify-content: center;
+  align-items: center;
 }
 
 #billing-section h3 {
