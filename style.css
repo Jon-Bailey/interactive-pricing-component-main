@@ -11,6 +11,7 @@ body {
   color: hsl(225, 20%, 60%);
   background-image: url(images/bg-pattern.svg);
   background-repeat: no-repeat;
+  background-size:100vw 50vh;
   padding: 20px;
 }
 
