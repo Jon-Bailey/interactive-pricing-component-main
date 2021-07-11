@@ -8,11 +8,6 @@
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Interactive pricing component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <header>
@@ -21,13 +16,15 @@
   </header>
 
   <main>
-    <h2>100K PAGEVIEWS</h2>
+    <div class="top-div">
+      <h2 id="page-views">100K PAGEVIEWS</h2>
+      <h2 id="price-desktop"><span id="price"></span>/month</h2>
+    </div>
     <section id="pricing">
       <div id="slider-container">
-      <!--<div id="slider-handle"></div>-->
       <input type="range" min="0" max="100" value="50" id="slider-bar">
     </div>
-      <h2><span id="price">$16.00</span> /month</h2>
+      <h2 id="price-mobile"><span id="mobile-price"></span>/month</h2>
     </section>
 
   <section id="billing-section">
@@ -37,21 +34,22 @@
       <span class="toggle round"></span>
     </label>
     <h3>Yearly Billing</h3>
-    <span class="discount">-25%</span>
+    <span class="discount">-25%<span id="discount-text"> discount</span>
   </section>
 
   <section id="check-section">
+    <div id="check-div">
     <h3><span class="check"><img src=images/icon-check.svg></span>Unlimited websites</h3>
     <h3><span class="check"><img src=images/icon-check.svg></span>100% data ownership</h3>
     <h3><span class="check"><img src=images/icon-check.svg></span>Email reports</h3>
-  </section>
-
+    </div>
     <div id="cta-button"><a href="#">Start my trial</a></div>
+  </section>
   </main>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Jon Bailey</a>.
   </div>
 
   <script src="script.js"></script>
